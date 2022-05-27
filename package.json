@@ -1,0 +1,24 @@
+{
+  "name": "enhance-rig",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "sandbox",
+    "test": "tape-es ./test/*.test.mjs | tap-arc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@architect/sandbox": "^5.2.2",
+    "tap-arc": "^0.3.4",
+    "tape-es": "^1.2.17"
+  },
+  "dependencies": {
+    "@architect/functions": "^5.0.5",
+    "@architect/plugin-bundles": "^1.1.1",
+    "@enhance/base-element": "^1.0.0",
+    "@enhance/import-transform": "^1.0.1",
+    "@enhance/ssr": "^2.2.0"
+  }
+}
