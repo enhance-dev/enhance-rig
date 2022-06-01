@@ -7,12 +7,12 @@ export default function HelloWorld({ html, state }) {
     font-family: sans-serif;
   }
 </style>
-<slot is="div" name="salutation">
+<slot as="div" name="salutation">
   <h1>
     Hello
   </h1>
 </slot>
-<span observed="name">${name}</span>
+<span>${name}</span>
 
 
 <script type="module">
@@ -21,6 +21,7 @@ export default function HelloWorld({ html, state }) {
   class HelloWorld extends BaseElement {
     constructor() {
       super()
+      this.updateName = this.updateName.bind(this)
       console.log('HelloWorld constructor')
     }
 
@@ -30,11 +31,16 @@ export default function HelloWorld({ html, state }) {
       ]
     }
 
+    updateName(name) {
+      this.shadowRoot.querySelector('span').textContent = name
+    }
+
     attributeChangedCallback(name, oldValue, newValue) {
       if (oldValue !== newValue) {
-
+        this.updateName(newValue)
       }
     }
+
   }
 
   customElements.define('hello-world', HelloWorld)

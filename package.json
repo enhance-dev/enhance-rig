@@ -19,6 +19,6 @@
     "@architect/plugin-bundles": "^1.1.1",
     "@enhance/base-element": "^1.0.0",
     "@enhance/import-transform": "^1.0.1",
-    "@enhance/ssr": "^2.2.0"
+    "@enhance/ssr": "^2.3.0"
   }
 }

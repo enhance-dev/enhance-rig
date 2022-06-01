@@ -22,8 +22,12 @@ async function myhandler() {
 ${Head()}
 <hello-world></hello-world>
 
-<hello-world name="Ya'll">
+<hello-world name="Salmon">
   <h1 slot='salutation'>wow</h1>
+</hello-world>
+
+<hello-world name="Tyler">
+  <h1 slot='salutation'>My name is Taylor, Salmon</h1>
 </hello-world>
     `
   }
