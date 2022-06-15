@@ -1,6 +1,9 @@
 @app
 rig
 
+@static
+fingerprint true
+
 @http
 get /
 

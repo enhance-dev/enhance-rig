@@ -16,7 +16,7 @@ export default function HelloWorld({ html, state }) {
 
 
 <script type="module">
-  import BaseElement from '/_bundles/base-element.mjs'
+  import BaseElement from '/_static/base-element.mjs'
 
   class HelloWorld extends BaseElement {
     constructor() {

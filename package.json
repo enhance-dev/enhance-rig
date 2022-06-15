@@ -10,15 +10,17 @@
   "author": "",
   "license": "Apache-2.0",
   "devDependencies": {
+    "@architect/architect": "^10.3.3",
     "@architect/sandbox": "^5.2.2",
     "tap-arc": "^0.3.4",
     "tape-es": "^1.2.17"
   },
   "dependencies": {
     "@architect/functions": "^5.0.5",
-    "@architect/plugin-bundles": "^1.1.1",
+    "@architect/plugin-bundles": "^3.0.0",
     "@enhance/base-element": "^1.0.0",
-    "@enhance/import-transform": "^1.0.1",
-    "@enhance/ssr": "^2.3.0"
+    "@enhance/import-transform": "^3.0.0",
+    "@enhance/ssr": "^2.3.3",
+    "esbuild": "^0.14.43"
   }
 }
